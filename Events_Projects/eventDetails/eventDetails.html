@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="/sidebar_assets/coding_club_logo.jpg"/>
+    <title>Event Details &mdash; Coding Club RVCE</title>
+
+     <!-- jQuery CDN -->
+    <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" ></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+ 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   
+    
+    
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+     <!-- custom css link -->
+    <link rel="stylesheet" href="/sidebar_assets/sidebar.css">
+    <link rel="stylesheet" href="./eventDetails.css?version50">
+    
+    <style>
+     .nav-tabs li{
+          min-width : 20%;
+        }
+        .navbar.navbar-default{
+            margin-bottom:10px;
+        }
+        
+        #content{
+            padding:0px; margin-top:15px;
+        }
+        
+            
+      .site-footer {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  background: #000;
+  text-align: center;
+      }
+
+.site-footer .post-entry-sidebar ul li a h4 {
+  color: #fff;
+}
+
+.site-footer .footer-social li a > span {
+  width: 30px;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  opacity: .5;
+}
+
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.site-footer p {
+  color: rgba(255, 255, 255, 0.5);
+}
+  
+  
+  .article 
+	{
+		text-align: justify;
+		font-family: 'Roboto Slab',serif;
+		margin:15px;
+	}
+
+
+	a:hover 
+	{
+		color:purple;
+		text-decoration: underline;
+	}
+
+	#map {
+	    margin-top:10px;
+		height: 570px;  
+		width: 100%;  
+	}
+
+	@media all and (min-width: 768px) 
+	{
+		.nav 
+		{ 
+			text-align:left;
+			-webkit-flex: 10 auto;
+			flex:1 auto;
+			-webkit-order:1;
+			order:1;
+		}
+
+		.article 
+		{
+			-webkit-flex:5 0px;
+			flex:5 50px;
+			-webkit-order:2;
+			order:2;
+		}
+	}
+
+
+
+	header{
+		background-image: url("back3.jpg");
+		width: 100%;
+		color:white;
+		font-size:100px;
+		font-family: Fira Sans;
+		text-align:center;
+		font-weight:bolder;
+		height: 100%;
+		/*margin: 0px;*/
+		/*padding: 0px;*/
+		line-height: 150px; 
+	}
+	
+	desc{
+	    font-size:30px;
+	}
+	
+	
+	@media only screen and (max-width: 600px){
+    header{
+		    
+		    background-image: url("back3.jpg");
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    width: 100%;
+		    color:white;
+            font-size:45px;
+            font-family: Fira Sans;
+		    text-align:center;
+	    	height: 50%;
+			}
+			
+	desc{
+	    font-size:18px;
+	}
+	
+	#map {
+		height: 500px;
+		width:100%;
+	}
+}
+	.imgsub
+	{
+		color:black;
+		font-size:40px;
+		font-family: 'Roboto Slab',serif;
+		font-weight:lighter;
+	}
+	img {
+   margin-top:10px;
+    width:100%;
+    height :100%;
+   }
+
+        
+     </style>
+</head>
+
+<body>
+       <!-- remove 000webhost watermark-->
+   <style> 
+    img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+    display: none;}
+    </style>
+    <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3><img id="logo" src="/sidebar_assets/coding_club_logo.jpg" style="width:80%; height:80%; margin-left:15px;"></h3> <!--do not remove h3-->
+            <!--<h3>Coding Club RVCE</h3>-->
+
+            <strong>
+                <i><img id="icon" src="/sidebar_assets/coding_club_logo.jpg"></i>
+                <!--<h6><br></h6>-->
+                <!--<i class="glyphicon glyphicon-user"></i>-->
+            </strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="/index.html"> <!--data-toggle="collapse" aria-expanded="false"-->
+                    <i class="fa fa-home"></i>
+                    Home
+                </a>
+                <!--<ul class="collapse list-unstyled" id="home">-->
+                <!--    <li><a href="#">Home 1</a></li>-->
+                <!--    <li><a href="#">Home 2</a></li>-->
+                <!--    <li><a href="#">Home 3</a></li>-->
+                <!--</ul>-->
+            </li>
+
+            <li>
+                <a href="/about/about.html">
+                    <i class="fa fa-info-circle"></i>
+                    About
+                </a>
+            </li>
+            
+            <li >
+               <a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+                    <i class="fa fa-rss-square"></i>
+                    Blog
+                </a>
+            </li>
+
+            <li  class="active">
+                <a href="/Events_Projects/events/events.html">
+                    <i class="fa fa-calendar"></i>
+                    Events
+                </a>
+            </li>
+            
+            <li>
+                <a href="/Events_Projects/projects/projects.html">
+                    <i class="fa fa-tasks"></i>
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="/Contacts/contacts.html">
+                    <i class="  fa fa-envelope-o"></i>
+                   Contact Us
+                </a>
+            </li>
+
+            
+ 
+        </ul>
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content" style="margin-top:0px; max-width:1050px;padding:0px;">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                     <span><button style="margin-top: 15px;" type="button" id="sidebarCollapse" class="btn btn-dark">
+						<i class="fa fa-align-justify"></i>
+					</button></span>
+					<a style="right:0px;"><img align="right" src="/sidebar_assets/rvce.png" style="width:60px;margin-top:0px;"></a>
+
+        </div>
+    </nav>
+
+    <div class="container" style="max-width:1050px;padding:0px;">
+      
+      
+       <!-- remove 000webhost watermark-->
+   <style> 
+    img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+    display: none;}
+    </style>
+
+		<div class="container" style="width:100%">
+			<header>
+					CODE WARS 2.0
+			</header>
+		</div>
+		
+<div class="container" style="width:100%">
+	
+	<div class="row">
+	     <div class="article">     
+			<desc>
+				We invite all coding enthusiasts to test your problem solving skills and discover the creativity of algorithms.
+				We will be recruiting people for our club from this event.So do join and help #makeCodingGreatAgain.
+			</desc>
+			</div>
+	
+		<center>
+			<div class="imgsub">
+			  Venue,Date
+			</div>
+			<a href="/register/register.html" target="_blank"><h3 style="font-family: 'Roboto Slab',serif; margin:5px; color:blue;">REGISTER AT THIS LINK</h3>
+			</a>
+		</center>
+	    
+	    <div class="col-md-5" style="margin-top:auto; height:inherit;">
+	       <img src="final.jpg" >
+        </div>
+
+        <div class="col-md-7">
+		 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.1268811344495!2d77.49842992975027!3d12.92293561591585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee6ae7c2103%3A0x16d340124447f286!2sIEM+Auditorium!5e0!3m2!1sen!2sin!4v1533431245040"  frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		</div>
+
+   </div>
+</div>
+
+  </div>
+</div>
+</div>
+
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+                  <h3>Quick Links</h3>
+                 <font face="Verdana, Geneva, sans-serif"> 
+                 <ul class="list-unstyled">
+                  <li >
+                  <a href="/index.html"> 
+                  Home
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/about/about.html">
+                  About
+                  </a>
+                  </li>
+                  
+                  <li >
+                  <a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+                  Blog
+                  </a>
+                  </li>
+
+                  <li >
+                  <a href="/Events_Projects/events/events.html">
+                  Events
+                  </a>
+                  </li>
+                  
+                  <li>
+                  <a href="/Events_Projects/projects/projects.html">
+                  Projects
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/Contacts/contacts.html">
+                  Contact Us
+                  </a>
+                  </li> 
+                  </ul></font>
+          </div>
+          <div class="col-md-6 ml-auto">
+            <div class="row">
+              <div class="col-md-7">
+                 <h3>Our Address</h3>
+                <div class="post-entry-sidebar">
+                   <font face="Verdana, Geneva, sans-serif">
+                    <address style="color:white;">
+                        <br> R V College of Engineering
+                        <br> R V Vidyanikethan Post
+                        <br> Mysuru Road Bengaluru - 560 059
+                        <br>
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <a href="mailto:codingclub@rvce.edu.in">:codingclubrvce@rvce.edu.in</a>
+                    </address>
+                    </font>
+              </div>
+              </div>
+              <div class="col-md-1"></div>
+              
+              <div class="col-md-4">
+                <div class="mb-5">
+                    
+                  <h3>Social</h3>
+                  <font face="Verdana, Geneva, sans-serif">
+                  <ul class="list-unstyled footer-social">
+                    <!-- <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li> -->
+                    <li><a href="https://www.facebook.com/codingclubrvce/"><span class="fa fa-facebook"></span> Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/coding-club-rvce/"><span class="fa fa-linkedin-square"></span> LinkedIn </a></li>
+                  </ul>
+                  </font>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+    
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+     $('#sidebarCollapse').on('click', function () {
+         $('#sidebar').toggleClass('active');
+     });
+ });
+</script>
+
+
+
+</body>
+
+</html>
+
+
+

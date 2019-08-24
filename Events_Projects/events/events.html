@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="shortcut icon" href="/sidebar_assets/coding_club_logo.jpg"/>
+    <title>Events &mdash; Coding Club RVCE</title>
+
+	<!-- jQuery CDN -->
+	<!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" ></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>-->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	
+	
+	
+	<!-- Bootstrap Js CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- custom css link -->
+	<link rel="stylesheet" href="/sidebar_assets/sidebar.css?version50">
+	
+	<style>
+	/* body {*/
+ /* background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);*/
+ /* padding:0px;*/
+ /*}*/
+ 
+	.navbar.navbar-default{
+	}
+	
+	#content{
+		padding:0px; margin-top:15px;
+	}
+	
+	
+	.container{
+		text-align: center;
+		margin: 10px auto;
+	}
+	
+	.nav-tabs > li {
+		float:none;
+		display:inline-block;
+		min-width: 30%;
+		font-weight: 600;
+		font-size: 25px;
+		font-family: 'Roboto Slab',serif;
+	}
+
+	.nav-tabs {
+		text-align:center;
+	}
+	
+	.carousel-caption{
+          font-size:30px; 
+	}
+	
+	 @media screen and (max-width:600px){
+      .carousel-caption{
+          font-size:15px;
+      }
+      
+      
+     }
+     
+     
+         
+      .site-footer {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  background: #000;
+  text-align: center;
+}
+
+.site-footer .post-entry-sidebar ul li a h4 {
+  color: #fff;
+}
+
+.site-footer .footer-social li a > span {
+  width: 30px;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  opacity: .5;
+}
+
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.site-footer p {
+  color: rgba(255, 255, 255, 0.5);
+}
+  
+
+</style>
+</head>
+
+<body>
+       <!-- remove 000webhost watermark-->
+   <style> 
+    img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+    display: none;}
+    </style>
+    <div class="wrapper">
+	<!-- Sidebar Holder -->
+	<nav id="sidebar">
+		<div class="sidebar-header">
+			<h3><img id="logo" src="/sidebar_assets/coding_club_logo.jpg" style="width:80%; height:80%; margin-left:15px;"></h3> <!--do not remove h3-->
+
+			<strong>
+				<i><img id="icon" src="/sidebar_assets/coding_club_logo.jpg"></i>
+			</strong>
+		</div>
+
+		<ul class="list-unstyled components">
+			<li>
+				<a href="/index.html"> 
+					<i class="fa fa-home"></i>
+					Home
+				</a>
+
+				</li>
+
+				<li>
+					<a href="/about/about.html">
+						<i class="fa fa-info-circle"></i>
+						About
+					</a>
+				</li>
+				
+				
+				<li class="active">
+					<a href="/Events_Projects/events/events.html">
+						<i class="fa fa-calendar"></i>
+						Events
+					</a>
+				</li>
+				
+				<li>
+					<a href="/Events_Projects/projects/projects.html">
+						<i class="fa fa-tasks"></i>
+						Projects
+					</a>
+				</li>
+
+                <li >
+					<a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+						<i class="fa fa-rss-square"></i>
+						Blog
+					</a>
+				</li>
+
+				<li>
+					<a href="/Contacts/contacts.html">
+						<i class="  fa fa-envelope-o"></i>
+						Contact Us
+					</a>
+				</li>
+
+				
+				
+			</ul>
+		</nav>
+
+		<!-- Page Content Holder -->
+		<div id="content" style="margin-top:0px;width:2050px;">
+
+      <nav class="navbar navbar-default" style="max-width:2050px;">
+        <div class="container-fluid" style="max-width:2050px;">
+
+					<span><button style="margin-top: 15px;" type="button" id="sidebarCollapse" class="btn btn-dark">
+						<i class="fa fa-align-justify"></i>
+					</button></span>
+					<a style="right:0px;"><img align="right" src="/sidebar_assets/RVlogo.jpeg" width=60px></a>
+
+						</div>
+					</nav>
+
+					<div class="container" style="max-width:1050px;">
+					
+							<ul class="nav nav-tabs" style="max-width:1050px;">
+								<li class="active"><a data-toggle="tab" href="#tab-1">Upcoming</a></li>
+								<li><a data-toggle="tab" href="#tab-2">Archives</a></li>
+							</ul>
+
+							<div class="tab-content">
+								
+								
+								<!--////////////////////////current events////////////////////////////////-->
+								<div class="tab-pane fade in active" role="tabpanel" id="tab-1">
+									
+									
+									<!--//////////////////////////////event1//////////////////////////////////////////////-->
+									<div class="container" style="max-width:1000px;">  <!--border-style:solid; border-radius:30px;-->
+										<h1 style="margin-top:0px; font-family: 'Lucida Console"><br><b>Techatlon 18</b></h1>
+										<div class="row" >
+											<div class="col-sm-4">
+												<img src="poster.jpg" style="width:100%;height:100%; margin-bottom:10px;">
+											</div>
+											<div class="col-sm-8" style="font-family: 'Roboto Slab',serif; font-size:20px;">
+												<div class="alert alert-success" role="alert">
+													<strong>Event Description</strong>
+												</div>
+												<div style="text-align:justify;">
+												We are thrilled to announce that we are conducting <b>TECHATHLON</b>, a hackathon in <b>Machine Learning, IoT and  Blockchain</b> in association with <b>Curl Analytics</b>, a leading research company with expertise in ML, IoT and Blockchain. 
+												<br>
+												Cash prizes upto <b>₹60,000 and internship/job</b> offers at Curl Analytics up for grabs!
+												
+												<br>
+												Idea Phase live now
+												<a href="../eventDetails/techathlon.html" style="color:blue;">Learn More...</a>
+												<br>
+													Feel free to clarify your queries <a style="color:blue;" href="/Contacts/contacts.html">here</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									
+									<!--//////////////////////////////event2//////////////////////////////////////////////-->
+									<!--border-style:solid; border-radius:30px;-->
+									<!--
+									<div class="container" style=" max-width:850px;"> 
+										<h1 style="margin-top:0px; font-family: 'Lucida Console"><br>Code Wars 2.0</h1>
+										<div class="row" >
+											<div class="col-sm-4">
+												<img src="assets/img/IMG-20180609-WA0005.jpg" style="width:100%;height:250px; margin-bottom:10px;">
+											</div>
+											<div class="col-sm-8"  style="font-family: 'Roboto Slab',serif; font-size:20px;">
+												<div class="alert alert-success" role="alert">
+													<strong>Event Description</strong>
+												</div>
+												
+												<div style="text-align:left;">
+												Our annual recruitment drive is back, and bigger than ever. Join us and take part in
+												the largest coding event @ RVCE.
+												<br>
+												<a href="../eventDetails/eventDetails.html" style="color:blue;">Learn More....</a>
+												<br>
+													Feel free to clarify your queries <a style="color:blue;" href="/Contacts/contacts.html">here</a>
+												</div>
+												
+										
+												
+											</div>
+										</div>
+									</div>  -->
+									
+									
+									
+									
+								</div><!-- end of current events-->
+
+
+								<!--////////////////////////Archives////////////////////////////////-->
+								<div class="tab-pane fade" role="tabpanel" id="tab-2">
+								    
+	<!-- latest archive-->
+	 <div class="container" style="max-width:1050px;">
+    	<h2>Code Marathon 2018</h2>
+    	<div id="Carousel2" class="carousel slide" data-ride="carousel" style="width: 90%; margin: 0 auto;">
+    		<!-- Indicators -->
+    		<ol class="carousel-indicators">
+    			<li data-target="#Carousel2" data-slide-to="0" class="active"></li>
+    			<li data-target="#Carousel2" data-slide-to="1"></li>
+    			
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner" >
+    			<div class="item active">
+    				<img src="assets/img/CM20182.jpeg" alt="cc1" style="width:100% ;max-height:400px;">
+    				
+    			</div>
+
+    			<div class="item">
+    				<img src="assets/img/CM20181.jpeg" alt="cc2" style="width:100%;max-height:400px;">
+    				
+    			</div>
+    			
+    	
+    			
+    		</div>
+
+    		<!-- Left and right controls -->
+    		<a class="left carousel-control" href="#Carousel2" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"></span>
+    			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="right carousel-control" href="#Carousel2" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right"></span>
+    			<span class="sr-only">Next</span>
+    		</a>
+    	</div>
+    	
+    </div>
+    <div class="container" style="max-width:1050px;">
+   
+        	<div class="alert alert-success 1" role="alert"  style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%; margin:0 auto; text-align:justify;">
+            On 18th August 2018, the Coding Club  held its 2nd edition of the Coding Marathon. It was an 8 hour long workshop where the students were made to work on brainstorming problems from the field of Data Structues and Algorithms.
+            The sessions covered all topics ranging from basics to complex algorithms and data structures. This event was aimed at motivating students to take part in various competitions like ACM ICPC etc.
+            The sessions were conducted by the final year students of the club who have represented the college at various competitions.
+        	</p>
+    </div>
+									
+									<!--////////////////////////Archive1////////////////////////////////-->
+										
+    <div class="container" style="max-width:1050px;">
+    	<h2>RVCE Hacks!</h2>
+    	<div id="Carousel1" class="carousel slide" data-ride="carousel" style="width: 90%; margin: 0 auto;">
+    		<!-- Indicators -->
+    		<ol class="carousel-indicators">
+    			<li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+    			<li data-target="#Carousel1" data-slide-to="1"></li>
+    			<li data-target="#Carousel1" data-slide-to="2"></li>
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner" >
+ 						<div class="item active">
+							<img src="assets/img/cc2.jpg" alt="cc1" style="width:100%;max-height:400px;" >
+				    		<div class="carousel-caption">
+							Aptitude Round 
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="assets/img/CC3.jpg" alt="cc2" style="width:100%;max-height:400px;">
+							<div class="carousel-caption">
+							
+							</div>
+						</div>
+												
+					<div class="item">
+						<img src="assets/img/cc5.jpg" alt="cc3" style="width:100%;max-height:400px;">
+						<div class="carousel-caption">
+							Coding Round						
+					    </div>
+													
+                    </div>
+    			
+    		</div>
+
+    		<!-- Left and right controls -->
+    		<a class="left carousel-control" href="#Carousel1" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"></span>
+    			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="right carousel-control" href="#Carousel1" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right"></span>
+    			<span class="sr-only">Next</span>
+    		</a>
+    	</div>
+    </div>										
+
+        <div class="container" style="max-width:1050px;">
+        	<div class="alert alert-success 1" role="alert" style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%;margin:0 auto;text-align:justify;">
+        	RVCE Hacks! was an intra-collegiate coding competition open to students of all branches and semesters. It is the Coding Club’s first ever event. The preliminary round was held at the IEM Auditorium on 17th January, 2017. The top 40 participants qualified for a second coding round, held on 21st January, 2017 at the ISE department.
+            
+        	The event saw wide participation from students across semesters and branches, with 236 participants. Participants were from ISE, CSE, Mechanical, Civil and EC departments. The preliminary round was a logical one, with many puzzles and brain teasers. The coding round was a competition hosted on Hackerrank with participants showcasing their programming prowess trying to make it to the top of the leaderboard. 
+
+        	The event was aimed at creating and fostering interest in puzzle solving and coding on campus. 
+        	<br>
+        	</p>
+        	</div>
+        	
+    
+    
+    <!--////////////////////////Archive2////////////////////////////////-->
+
+    <div class="container" style="max-width:1050px;">
+    	<h2>GSoC Head Start</h2>
+    	<div id="Carousel2" class="carousel slide" data-ride="carousel" style="width: 90%; margin: 0 auto;">
+    		<!-- Indicators -->
+    		<ol class="carousel-indicators">
+    			<li data-target="#Carousel2" data-slide-to="0" class="active"></li>
+    			<li data-target="#Carousel2" data-slide-to="1"></li>
+    			<li data-target="#Carousel2" data-slide-to="2"></li>
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner" >
+    			<div class="item active">
+    				<img src="assets/img/gsoc1.jpg" alt="cc1" style="width:100% ;max-height:400px;">
+    				<div class="carousel-caption">
+    					Prof Channa Bankapur
+    				</div>
+    			</div>
+
+    			<div class="item">
+    				<img src="assets/img/gsoc2.jpg" alt="cc2" style="width:100%;max-height:400px;">
+    				<div class="carousel-caption">
+    					Mr. Ankush Mishra
+    				</div>
+    			</div>
+    			
+    			<div class="item">
+    				<img src="assets/img/gsoc3.jpg" alt="cc3" style="width:100%;max-height:400px;">
+    				<div class="carousel-caption">
+    				</div>
+    			</div>
+    			
+    		</div>
+
+    		<!-- Left and right controls -->
+    		<a class="left carousel-control" href="#Carousel2" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"></span>
+    			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="right carousel-control" href="#Carousel2" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right"></span>
+    			<span class="sr-only">Next</span>
+    		</a>
+    	</div>
+    </div>
+    <div class="container" style="max-width:1050px;">
+   
+        	<div class="alert alert-success 1" role="alert"  style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%; margin:0 auto; text-align:justify;">
+        	A head start event into GSoC was planned by the Coding Club of RVCE to give the members a good idea about the event, application criteria, work involved and an overall picture of the event. The event had two speakers – Prof. Channa Bankapur and Mr. Ankush Mishra. 
+
+        	Prof. Channa Bankapur is currently a professor at PES University. He has worked for technology giants like Google and Adobe, and is also an entrepreneur. He has mentored and guided many students towards GSoC, Google Code Jam and other such events. Mr. Ankush Mishra is a 6th semester student at PESIT- South Campus. He worked with Apache for GSoC ’16.
+        	</p>
+    </div>
+    <!-- Archive 3 -->
+      <div class="container" style="max-width:1050px;">
+    	<h2>Code Marathon 2017</h2>
+    	<div id="Carousel3" class="carousel slide" data-ride="carousel" style="width: 90%; margin: 0 auto;">
+    		<!-- Indicators -->
+    		<ol class="carousel-indicators">
+    			<li data-target="#Carousel3" data-slide-to="0" class="active"></li>
+    			
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner" >
+    			<div class="item active">
+    				<img src="assets/img/cm.jpg" alt="cc1" style="width:100% ;max-height:400px;">
+    				<div class="carousel-caption">
+    					
+    				</div>
+    			</div>
+
+    		
+    			
+    		</div>
+
+    		<!-- Left and right controls -->
+    		
+    	</div>
+    </div>
+    <div class="container" style="max-width:1050px;">
+   
+        	<div class="alert alert-success 1" role="alert"  style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%; margin:0 auto; text-align:justify;">
+        On Independence Day, the Coding Club held an event to familiarize the members with competitive coding. The event was engaged by Abhishek S (ISE Batch of 2017, placed in Morgan Stanley) and Vinay M Dani (ECE Batch of 2017, placed in Walmart Labs) who explained concepts and avenues in competitive coding by collaborative problem solving. 
+        	</p>
+    </div>
+
+
+<!-- Archive 4 -->
+
+<div class="container" style="max-width:1050px;">
+    	<h2>CodeWars</h2>
+    	<div id="Carousel4" class="carousel slide" data-ride="carousel" style="width: 90%; margin: 0 auto;">
+    		<!-- Indicators -->
+    		<ol class="carousel-indicators">
+    			<li data-target="#Carousel4" data-slide-to="0" class="active"></li>
+    			<li data-target="#Carousel4" data-slide-to="1"></li>
+    			<li data-target="#Carousel4" data-slide-to="2"></li>
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner" >
+    			<div class="item active">
+    				<img src="assets/img/codewars1.jpg" alt="cc1" style="width:100% ;max-height:400px;">
+    				<div class="carousel-caption">
+    					
+    				</div>
+    			</div>
+
+    			<div class="item">
+    				<img src="assets/img/codewars2.jpg" alt="cc2" style="width:100%;max-height:400px;">
+    				<div class="carousel-caption">
+    				</div>
+    			</div>
+    			
+    			<div class="item">
+    				<img src="assets/img/codewars3.jpg" alt="cc3" style="width:100%;max-height:400px;">
+    				<div class="carousel-caption">
+    				</div>
+    			</div>
+    			
+    		</div>
+
+    		<!-- Left and right controls -->
+    		<a class="left carousel-control" href="#Carousel4" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"></span>
+    			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="right carousel-control" href="#Carousel4" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right"></span>
+    			<span class="sr-only">Next</span>
+    		</a>
+    	</div>
+    </div>
+    <div class="container" style="max-width:1050px;">
+   
+        	<div class="alert alert-success 1" role="alert"  style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%; margin:0 auto; text-align:justify;">
+        Code Wars was the second edition of the club’s annual coding competition. The event received a warm response from the students on campus. The event was aimed at recruitment for the club and also at familiarizing students with the types of questions asked in placement tests.
+        The final round of the event was a coding round which took place on Hakerrank.
+        	</p>
+    </div>
+    
+    <!--archive 5-->
+    <div class="container" style="max-width:1050px;">
+    	<h2>Weekly Sessions</h2>
+    	<div id="Carousel5" class="carousel slide" data-ride="carousel" style="width: 90%; margin: 0 auto;">
+    		<!-- Indicators -->
+    		<ol class="carousel-indicators">
+    			<li data-target="#Carousel5" data-slide-to="0" class="active"></li>
+    			<li data-target="#Carousel5" data-slide-to="1"></li>
+    			<li data-target="#Carousel5" data-slide-to="2"></li>
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner" >
+    			<div class="item active">
+    				<img src="assets/img/weekly1.jpg" alt="cc1" style="width:100% ;max-height:400px;">
+    				<div class="carousel-caption">
+    					
+    				</div>
+    			</div>
+
+    			<div class="item">
+    				<img src="assets/img/weekly2.jpg" alt="cc2" style="width:100%;max-height:400px;">
+    				<div class="carousel-caption">
+    				</div>
+    			</div>
+    			
+    			<div class="item">
+    				<img src="assets/img/weekly3.jpg" alt="cc3" style="width:100%;max-height:400px;">
+    				<div class="carousel-caption">
+    				</div>
+    			</div>
+    			
+    		</div>
+
+    		<!-- Left and right controls -->
+    		<a class="left carousel-control" href="#Carousel5" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"></span>
+    			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="right carousel-control" href="#Carousel5" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right"></span>
+    			<span class="sr-only">Next</span>
+    		</a>
+    	</div>
+    </div>
+    <div class="container" style="max-width:1050px;">
+   
+        	<div class="alert alert-success 1" role="alert"  style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%; margin:0 auto; text-align:justify;">
+        Coding Club of RVCE inspires students of all departments to learn coding, compete in events and competitions.In line with this thinking, it was decided to have a weekly sessions every Wednesday on a certain topic of competitive coding to expand our knowledge in this area.
+        The sessions held so far have been on – 
+Time and space complexity ,
+Numerical algorithms,Hashing , Dynamic programming ,Competitive coding and problem solving strategies ,Problem solving session I and II ,Cyber security 
+
+
+
+        	</p>
+    </div>
+    <!-- archive 6 -->
+<div class="container" style="max-width:1050px;">
+    <h2>Talk by Anup Kalbalia</h2>
+        	<div class="alert alert-success 1" role="alert"  style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%; margin:0 auto; text-align:justify;">
+        Anup Kalbalia is the head of Codechef. He was invited to speak at our college and address the students on the importance of problem solving ability. The title of his talk was ‘Stories from the world of Competitive Programming’.
+ He spoke about India’s position in the world of programming, some motivational examples of individuals who showed incredible will and desire to excel at programming, against all odds. 
+
+        	</p>
+    </div>
+    
+    <!-- archive 7 -->
+    <div class="container" style="max-width:1050px;">
+    <h2>Talk by Wolfgang Richter</h2>
+        	<div class="alert alert-success 1" role="alert"  style="width:90%; margin:0 auto;">
+        		<strong>Event Description</strong>
+        	</div>
+        	<p class="description" style="width:90%; margin:0 auto; text-align:justify;">
+         He is the Head of Infrastructure and Security at Sorocco Pvt Ltd. He is has a undergraduate degree in Computer Science from University of Virginia and has a Masters in Computer Science from Carniege Mellon University, Cambridge.
+Having worked with technology giant like IBM , he talked about his PhD Thesis to us and also explained the importance of different fields of Computer Science  such as Distributed Systems , AI and Software Administration. 
+
+
+        	</p>
+    </div>
+    
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+                  <h3>Quick Links</h3>
+                 <font face="Verdana, Geneva, sans-serif"> 
+                 <ul class="list-unstyled">
+                  <li >
+                  <a href="/index.html"> 
+                  Home
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/about/about.html">
+                  About
+                  </a>
+                  </li>
+                  
+                  <li >
+                  <a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+                  Blog
+                  </a>
+                  </li>
+
+                  <li >
+                  <a href="/Events_Projects/events/events.html">
+                  Events
+                  </a>
+                  </li>
+                  
+                  <li>
+                  <a href="/Events_Projects/projects/projects.html">
+                  Projects
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/Contacts/contacts.html">
+                  Contact Us
+                  </a>
+                  </li> 
+                  </ul></font>
+          </div>
+          <div class="col-md-6 ml-auto">
+            <div class="row">
+              <div class="col-md-7">
+                 <h3>Our Address</h3>
+                <div class="post-entry-sidebar">
+                   <font face="Verdana, Geneva, sans-serif">
+                    <address style="color:white;">
+                        <br> R V College of Engineering
+                        <br> R V Vidyanikethan Post
+                        <br> Mysuru Road Bengaluru - 560 059
+                        <br>
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <a href="mailto:codingclub@rvce.edu.in">:codingclub@rvce.edu.in</a>
+                    </address>
+                    </font>
+              </div>
+              </div>
+              <div class="col-md-1"></div>
+              
+              <div class="col-md-4">
+                <div class="mb-5">
+                    
+                  <h3>Social</h3>
+                  <font face="Verdana, Geneva, sans-serif">
+                  <ul class="list-unstyled footer-social" style="text-align:center;position:relative;right:18px;">
+                    <!-- <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li> -->
+                    <li><a href="https://www.facebook.com/codingclubrvce/" target="_blank"><span class="fa fa-facebook"></span> Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/coding-club-rvce/" target="_blank"><span class="fa fa-linkedin-square"></span> LinkedIn </a></li>
+                  </ul>
+                  </font>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#sidebarCollapse').on('click', function () {
+			$('#sidebar').toggleClass('active');
+		});
+	});
+</script>
+
+
+
+</body>
+
+</html>
+
+
+

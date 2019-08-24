@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="/sidebar_assets/coding_club_logo.jpg"/>
+    <title>Projects &mdash; Coding Club RVCE</title>
+
+    <!-- jQuery CDN -->
+    <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" ></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    
+    
+    
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- custom css link -->
+    <link rel="stylesheet" href="/sidebar_assets/sidebar.css?version50">
+    
+    <style>
+    	article{
+		border: 3px solid black;
+		border-radius: 30px;
+		
+		margin: 10px auto 10px;
+		background-color: #FFFFFF;
+		width: 70%;
+		height: 70%;
+		padding:5px;
+	}
+	
+	@media screen and (max-width: 600px) {
+	    
+	    article{
+	        width: 90%;
+		    height: 90%;
+	    }
+	}
+
+
+	article > img{
+		width: inherit;
+		height: inherit;
+		border: 1px solid #AAAAAA;
+	}
+
+	article > h3{
+		font-size: 35px;
+		text-decoration: underline;
+		text-decoration-color: black; 
+		font-weight: 300;
+		padding: 15px;
+		font-family: Lucida Console;
+
+	}
+
+	h1{
+		font-weight: 530;
+		background: #00c4cc;
+		background-image:linear-gradient(to right, #FF4136, #f06d06);
+		padding: 10px 15px;
+		margin-top: -14px;
+	}
+
+	article > p{
+		font-size: 30px;
+		font-family: 'Roboto Slab',serif; 
+		text-align : justify;
+	}
+
+	.container{
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.nav-tabs > li {
+		float:none;
+		display:inline-block;
+		min-width: 30%;
+		font-weight: 600;
+		font-size: 25px;
+		font-family: 'Roboto Slab',serif;
+	}
+
+	.nav-tabs {
+		text-align:center;
+		
+	}
+
+
+       
+      .site-footer {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  background: #000;
+  text-align: center;
+}
+
+.site-footer .post-entry-sidebar ul li a h4 {
+  color: #fff;
+}
+
+.site-footer .footer-social li a > span {
+  width: 30px;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  opacity: .5;
+}
+
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.site-footer p {
+  color: rgba(255, 255, 255, 0.5);
+}
+  
+</style>
+</head>
+
+<body>
+       <!-- remove 000webhost watermark-->
+   <style> 
+    img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+    display: none;}
+    </style>
+    <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3><img id="logo" src="/sidebar_assets/coding_club_logo.jpg" style="width:80%; height:80%; margin-left:15px;"></h3> <!--do not remove h3-->
+
+            <strong>
+                <i><img id="icon" src="/sidebar_assets/coding_club_logo.jpg"></i>
+            </strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li >
+                <a href="/index.html"> 
+                    <i class="fa fa-home"></i>
+                    Home
+                </a>
+                </li>
+
+                <li>
+                    <a href="/about/about.html">
+                        <i class="fa fa-info-circle"></i>
+                        About
+                    </a>
+                </li>
+                
+                
+
+                <li >
+                    <a href="/Events_Projects/events/events.html">
+                        <i class="fa fa-calendar"></i>
+                        Events
+                    </a>
+                </li>
+                
+                <li class="active">
+                    <a href="/Events_Projects/projects/projects.html">
+                        <i class="fa fa-tasks"></i>
+                        Projects
+                    </a>
+                </li>
+                <li >
+                    <a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+                        <i class="fa fa-rss-square"></i>
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="/Contacts/contacts.html">
+                        <i class="  fa fa-envelope-o"></i>
+                        Contact Us
+                    </a>
+                </li>
+
+                
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content" style="margin-top:0px;width:2050px;padding:0px;">
+
+      <nav class="navbar navbar-default" style="max-width:2050px;padding:0px;">
+        <div class="container-fluid" style="max-width:2050px;">
+                    
+                   <span><button style="margin-top: 15px;" type="button" id="sidebarCollapse" class="btn btn-dark">
+                      <i class="fa fa-align-justify"></i>
+                  </button></span>
+                  <a style="right:0px;"><img align="right" src="/sidebar_assets/RVlogo.jpeg" width=60px></a>
+
+                     </div>
+                 </nav>
+
+                 <div class="container" style="max-width:1050px; padding:0px;">
+
+                   <ul class="nav nav-tabs" >
+                     <li class="active"><a data-toggle="tab" href="#home">Ongoing</a></li>
+                     <li><a data-toggle="tab" href="#menu1">Completed</a></li>
+                 </ul>
+
+                 <div class="tab-content">
+                     <div id="home" class="tab-pane fade in active">
+                       <!-- <article>-->
+                       <!--    <h3>Internet of Things</h3>-->
+                       <!--    <img src="img/iot.jpg">-->
+                       <!--    <p>The club together worked on the concepts of Internet of Things such as Arduino , NodeMCU and implemented simple projects like Burglar Alarm and Proximity Sensor.</p>-->
+                       <!--</article>-->
+                       <article >
+                           <h3>Chat based Expert System</h3>
+                           <img src="img/chatbot.jpg">
+                           <p>Members of the club are building an expert system that retrieves data from that performs basic activities like searching for meanings on the weather, play music etc. The backend is being designed with NLP and ML approaches.</p>
+                       </article>
+
+                   </div>
+
+
+                   <div id="menu1" class="tab-pane fade">
+                    <article>
+                       <h3>Internet of Things</h3>
+                           <img src="img/iot.jpg">
+                           <p>The club together worked on the concepts of Internet of Things such as Arduino , NodeMCU and implemented simple projects like Burglar Alarm and Proximity Sensor.</p>
+                   </article>
+                   <article>
+                       <h3>Web Development</h3>
+                       <img src="img/web-development.jpg">
+                       <p>The site you are curently browsing was made as a part of an introductory project by the students of the club.</p>
+                   </article>
+               </div>
+
+           </div>
+       </div>
+   </div>
+</div>
+
+
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+                  <h3>Quick Links</h3>
+                 <font face="Verdana, Geneva, sans-serif"> 
+                 <ul class="list-unstyled">
+                  <li >
+                  <a href="/index.html"> 
+                  Home
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/about/about.html">
+                  About
+                  </a>
+                  </li>
+                  
+                  <li >
+                  <a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+                  Blog
+                  </a>
+                  </li>
+
+                  <li >
+                  <a href="/Events_Projects/events/events.html">
+                  Events
+                  </a>
+                  </li>
+                  
+                  <li>
+                  <a href="/Events_Projects/projects/projects.html">
+                  Projects
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/Contacts/contacts.html">
+                  Contact Us
+                  </a>
+                  </li> 
+                  </ul></font>
+          </div>
+          <div class="col-md-6 ml-auto">
+            <div class="row">
+              <div class="col-md-7">
+                 <h3>Our Address</h3>
+                <div class="post-entry-sidebar">
+                   <font face="Verdana, Geneva, sans-serif">
+                    <address style="color:white;">
+                        <br> R V College of Engineering
+                        <br> R V Vidyanikethan Post
+                        <br> Mysuru Road Bengaluru - 560 059
+                        <br>
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <a href="mailto:codingclub@rvce.edu.in">:codingclub@rvce.edu.in</a>
+                    </address>
+                    </font>
+              </div>
+              </div>
+              <div class="col-md-1"></div>
+              
+              <div class="col-md-4">
+                <div class="mb-5">
+                    
+                  <h3>Social</h3>
+                  <font face="Verdana, Geneva, sans-serif">
+                  <ul class="list-unstyled footer-social" style="text-align:center;position:relative;right:18px;">
+                    <!-- <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li> -->
+                    <li><a href="https://www.facebook.com/codingclubrvce/" target="_blank"><span class="fa fa-facebook"></span> Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/coding-club-rvce/" target="_blank"><span class="fa fa-linkedin-square"></span> LinkedIn </a></li>
+                  </ul>
+                  </font>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+   $('#sidebarCollapse').on('click', function () {
+       $('#sidebar').toggleClass('active');
+   });
+});
+</script>
+
+
+
+</body>
+
+</html>
+
+
+

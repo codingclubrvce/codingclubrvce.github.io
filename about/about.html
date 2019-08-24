@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="/sidebar_assets/coding_club_logo.jpg"/>
+    <title>About &mdash; Coding Club RVCE</title>
+
+     <!-- jQuery CDN -->
+    <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" ></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+ 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   
+    
+    
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+     <!-- custom css link -->
+    <link rel="stylesheet" href="/sidebar_assets/sidebar.css?version51">
+    <!--<link href="./css/tabs1.css?version=55" rel="stylesheet" type="text/css" >-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400i" rel="stylesheet">
+    
+    <style>
+     .nav-tabs li{
+          min-width : 20%;
+        }
+        .navbar.navbar-default{
+            margin-bottom:10px;
+        }
+        
+        #content{
+            padding:0px; margin-top:15px;
+        }
+        
+    
+    .nav-tabs { border-bottom: 2px solid #DDD; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav-tabs > li > a { border: none; color: #666; }
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #000 !important; background: transparent; }
+.nav-tabs > li > a::after { content: ""; background: #000; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #000 none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
+
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);  }
+
+body {
+  background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+  padding:0px;
+}
+
+
+	.nav-tabs > li {
+		float:none;
+		display:inline-block;
+		min-width: 30%;
+		font-weight: 600;
+		font-size: 25px;
+		font-family: 'Roboto Slab',serif;
+	}
+
+	.nav-tabs {
+		text-align:center;
+	}
+	
+	
+	
+.site-footer {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  background: #000;
+  text-align: center;
+}
+
+.site-footer .post-entry-sidebar ul li a h4 {
+  color: #fff;
+}
+
+.site-footer .footer-social li a > span {
+  width: 30px;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  opacity: .5;
+}
+
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.site-footer p {
+  color: rgba(255, 255, 255, 0.5);
+
+	
+     </style>
+</head>
+
+<body>
+       <!-- remove 000webhost watermark-->
+   <style> 
+    img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+    display: none;}
+    </style>
+    <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3><img id="logo" src="/sidebar_assets/coding_club_logo.jpg" style="width:80%; height:80%; margin-left:15px;"></h3> 
+            <strong>
+                <i><img id="icon" src="/sidebar_assets/coding_club_logo.jpg"></i>
+            </strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="/index.html"> 
+                    <i class="fa fa-home"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="/about/about.html">
+                    <i class="fa fa-info-circle"></i>
+                    About
+                </a>
+            </li>
+            
+            
+
+            <li >
+                <a href="/Events_Projects/events/events.html">
+                    <i class="fa fa-calendar"></i>
+                    Events
+                </a>
+            </li>
+            
+            <li>
+                <a href="/Events_Projects/projects/projects.html">
+                    <i class="fa fa-tasks"></i>
+                    Projects
+                </a>
+            </li>
+            
+            <li> 
+                <a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+                    <i class="fa fa-rss-square"></i>
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="/Contacts/contacts.html">
+                    <i class="  fa fa-envelope-o"></i>
+                   Contact Us
+                </a>
+            </li>
+
+            
+ 
+        </ul>
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content" style="margin-top:0px;width:2050px;">
+
+      <nav class="navbar navbar-default" style="max-width:2050px;">
+        <div class="container-fluid" style="max-width:2050px;">
+
+                <span><button style="margin-top: 15px;" type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fa fa-align-justify"></i>
+                    </button></span>
+                   <a style="right:0px;"><img align="right" src="/sidebar_assets/RVlogo.jpeg" width=60px></a>
+        </div>
+    </nav>
+
+    <div style="max-width:2050px;">
+        <!--<a href="#" style="font-family:'Roboto-Slab';font-size:20px;">About Us</a>-->
+        <div style="font-family: 'Merriweather',serif;font-size:50px;text-align:center;">
+            <b>About Us</b>
+        </div>
+        
+                <!-- Nav tabs -->
+                <div class="card">
+                    <ul class="nav nav-tabs" role="tablist" style="margin-left:auto; margin-right: auto; font-weight:bold;font-size:20px;">
+                    <!--<li role="presentation"  ><a href="#aim" aria-controls="aim" role="tab" data-toggle="tab"><span style="font-family:'Playfair Display', serif;">Aims</span></a></li>-->
+                    <li role="presentation" class="active"><a href="#faculty" aria-controls="faculty" role="tab" data-toggle="tab"><span style="font-family:'Playfair Display', serif;">Faculty</span></a></li>
+                    <li role="presentation"><a href="#coreteam" aria-controls="coreteam" role="tab" data-toggle="tab" style="font-family:'Playfair Display', serif;">Core Team</a></li>
+                    <!--<li role="presentation"><a href="#outcome" aria-controls="outcome" role="tab" data-toggle="tab" style="font-family:'Playfair Display', serif;">Outcomes</a></li>-->
+
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!--<div role="tabpanel" class="tab-pane active" id="aim" style="font-family: 'Raleway', sans-serif;">The R V Coding Club was started in the year 2016 by six students from the ECE department with an aim of bridging the gap between the departments when it comes to competitive coding. Then known as InSYNC, the R V Coding Club bloomed from a small team of 10 indiviaduals to a capacity of over 60 students today, spanning across the branches of CSE, ISE, ECE, EEE and  Mechanical among others.-->
+                        <!--<br>-->
+                        <!--<br>-->
+                        <!--    Today the Coding Club operates over various domains with work being done in Machine Learning, Web Development, Image Processing and Database Management Systems among others in inclusion to competitive programming. The club and its students are interested in taking up projects from the industry to work on and build their profiles. Weekly sessions are conducted to help the students receive a better understanding of topics of importance.-->
+                        <!--<br>-->
+                        <!--<br>-->
+                        <!--    The Coding Club aims to have its students take part and win in Hackathons and coding events such as the GSOC and the Google Code Jam in addition to developing Software Tools which would serve for the betterment of the society as a whole. The club members have worked on some of the most technically advanced projects done in the college with respect to the Computer and Information Sciences. -->
+                        <!--<br>-->
+                        <!--<br>-->
+                        <!--</div>-->
+                        <div role="tabpanel" class="tab-pane active" id="faculty" style="font-family: 'Raleway', sans-serif; font-size :20px; text-align : justify;">The Coding Club is backed heavily by the faculty of the college including the Heads of the Departments of CSE, ISE and ECE. The ISE HoD, <b>Dr. B M Sagar</b> is very actively involved in the working of the club and in the conduction of events associated with the club. The faculty advisor <b>Prof. Priya D</b> went about the entire process of setting up the club and takes active involvement in the functioning of the club. <b>Prof. Girish Rao Salanke</b> is an advisor and mentor of the coding club providing his valuable inputs and feedback in the conduction of events by the club.
+                            
+                             <div class="container" style = "width:inherit;">
+                                <h3 style="text-align:center; margin-bottom:30px;">Faculty Advisors</h3>
+                                
+                              
+                                <div class="row">
+                              
+                                    <div class="container" style="width:inherit; margin:0px; margin-left:auto; margin-right:auto; text-align:center">
+                                        
+                                        <div class="col-sm-4" style="margin-bottom:25px;">
+                                            <img class="img-circle"  align="middle" width="100px" height="100px" src="./img/sagar.jpg">
+                                             <h4>Dr. B.M. Sagar</h4>
+                                            <h5>HoD ISE</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://rvce.edu.in//ise-sagar"><img src="/sidebar_assets/rvce.png" width=30px></a>
+                                        </div>
+                                        
+                                         <div class="col-sm-4" style="margin-bottom:25px;">
+                                             <img class="img-circle"  align="middle" width="100px" height="100px" src="./img/priya.jpg">
+                                             <h4>Prof. Priya D.</h4>
+                                            <h5>Asst. Prof. dept. ISE</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://rvce.edu.in//ise-priya"><img src="/sidebar_assets/rvce.png" width=30px></a>
+                                        </div>
+                                        
+                                        <div class="col-sm-4" style="margin-bottom:25px;">
+                                             <img class="img-circle"  align="middle" width="100px" height="100px" src="./img/girish.jpg">
+                                             <h4>Prof. Girish Rao Salanke N S</h4>
+                                            <h5>Asst. Prof. dept. CSE</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.rvce.edu.in/cs-girish"><img src="/sidebar_assets/rvce.png" width=30px></a>
+                                        </div>
+                                    </div>
+                                </div>                           
+                            </div>
+                        </div>
+                        
+                        
+                        <div role="tabpanel" class="tab-pane" id="coreteam" style="font-family: 'Raleway', sans-serif; font-size :20px; text-align : justify;">The core team consists of the 6 students who are out to make a difference by managing the activity and working of the club and bringing out the best from all the members.They handle everything from day to day activities to conducting events on behalf of the club which includes getting sponsors and eminent personalities to address the students.
+                        
+                        
+                        
+                            <div class="container" style = "width:inherit;">
+                                <h3 style="text-align:center; margin-bottom:30px;">Core Team</h3>
+                                
+                              
+                                <div class="row">
+                              
+                                    <div class="container" style="width:inherit; margin-left:auto; margin-right:auto; text-align:center"> 
+                                        
+                                      
+                                        <div class="col-sm-3" >
+                                        </div>
+                                        
+                                        <div class="col-sm-3" style="margin-bottom:25px;">
+                                            <img class="img-circle" align="middle" width="100px" height="100px" src="./img/saket.jpg">
+                                            <h4 style="min-width:150px;">Saket Ringsia</h4>
+                                            <h5>President</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/saket.ringsia"><i class="fa fa-facebook-official"></i></a>
+                                              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/saket-ringsia-47902273"><i class="fa fa-linkedin-square"></i></a>
+                                               <a target="_blank" rel="noopener noreferrer" href="https://github.com/saketringsia"><i class="fa fa-github-square"></i></a>
+                                        </div>
+                                         
+                                        
+                                        <div class="col-sm-3" style="margin-bottom:25px;">
+                                             <img class="img-circle" src="./img/praveen.jpeg" align="middle" width="100px" height="100px">
+                                            <h4>Sai Praveen PN</h4>
+                                            <h5>Vice President</h5>
+                                             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/praveen1445"><i class="fa fa-facebook-official"></i></a>
+                                              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sai-praveen-7b1304136"><i class="fa fa-linkedin-square"></i></a>
+                                               <a target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-github-square"></i></a>
+                                        </div>
+                                        
+                                        <div class="col-sm-3" >
+                                            </div>
+                                        
+                                        <!-- <div class="col-sm-4">-->
+                                        <!--     <img class="img-circle"  align="middle" width="100px" height="100px" src="./img/cc_logo.png">-->
+                                        <!--     <h4>Anagha</h4>-->
+                                        <!--    <h5>Vice President</h5>-->
+                                        <!--    <a target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-facebook-official"></i></a>-->
+                                        <!--      <a target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-linkedin-square"></i></a>-->
+                                        <!--       <a target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-github-square"></i></a>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="container" style="margin-left:auto; margin-right:auto; text-align:center; width:inherit;">
+                                        
+                                        <div class="col-sm-3" style="margin-bottom:25px;">
+                                            <img class="img-circle" align="middle" width="100px" height="100px" src="./img/abhiram.jpg">
+                                            <h4>Abhiram Natarajan</h4>
+                                            <h5>Technical Head</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/lordbeerus0505"><i class="fa fa-facebook-official"></i></a>
+                                              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/abhiram-natarajan-908aa7131"><i class="fa fa-linkedin-square"></i></a>
+                                               <a target="_blank" rel="noopener noreferrer" href="https://github.com/lordbeerus0505"><i class="fa fa-github-square"></i></a>
+                                            
+                                        </div>
+                                        <div class="col-sm-3" style="margin-bottom:25px;">
+                                              <img class="img-circle" align="middle" width="100px" height="100px" src="./img/tanmay.jpg">
+                                             <h4>Tanmay Hukkeri</h4>
+                                            <h5>Sponsorship Head</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tanmay.hukkeri"><i class="fa fa-facebook-official"></i></a>
+                                              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tanmay-hukkeri-a37727169"><i class="fa fa-linkedin-square"></i></a>
+                                               <a target="_blank" rel="noopener noreferrer" href="https://github.com/TanmayH"><i class="fa fa-github-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-sm-3" style="margin-bottom:25px;">
+                                              <img class="img-circle"  align="middle" width="100px" height="100px" src="./img/pranava.jpg">
+                                              <h4>Pranava</h4>
+                                            <h5>Member</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pranava018"><i class="fa fa-facebook-official"></i></a>
+                                              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pranava-b-a7108a128
+                                                "><i class="fa fa-linkedin-square"></i></a>
+                                               <a target="_blank" rel="noopener noreferrer" href="https://github.com/bpranava"><i class="fa fa-github-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-sm-3" style="margin-bottom:25px;">
+                                           <img class="img-circle"  align="middle" width="100px" height="100px" src="./img/akshar.jpg">
+                                              <h4>Akshar</h4>
+                                            <h5>Member</h5>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/akshar.prasad"><i class="fa fa-facebook-official"></i></a>
+                                           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/akshar-prasad-
+b173b0151/"><i class="fa fa-linkedin-square">
+                                            </i>
+                                            </a>
+                                               <a target="_blank" rel="noopener noreferrer" href="https://github.com/aksharprasad"><i class="fa fa-github-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                        
+                        
+                        </div>
+                        <!--<div role="tabpanel" class="tab-pane" id="outcome" style="font-family: 'Raleway', sans-serif;">-->
+                        <!--    The -->
+                        <!--</div>-->
+                        
+                    </div>
+                </div>      
+       
+       
+     </div>
+</div>
+</div>
+
+
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+                  <h3>Quick Links</h3>
+                 <font face="Verdana, Geneva, sans-serif"> 
+                 <ul class="list-unstyled">
+                  <li >
+                  <a href="/index.html"> 
+                  Home
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/about/about.html">
+                  About
+                  </a>
+                  </li>
+                  
+                  <li >
+                  <a target="_blank" rel="noopener noreferrer" href="/blog/index.html">
+                  Blog
+                  </a>
+                  </li>
+
+                  <li >
+                  <a href="/Events_Projects/events/events.html">
+                  Events
+                  </a>
+                  </li>
+                  
+                  <li>
+                  <a href="/Events_Projects/projects/projects.html">
+                  Projects
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="/Contacts/contacts.html">
+                  Contact Us
+                  </a>
+                  </li> 
+                  </ul></font>
+          </div>
+          <div class="col-md-6 ml-auto">
+            <div class="row">
+              <div class="col-md-7">
+                 <h3>Our Address</h3>
+                <div class="post-entry-sidebar">
+                   <font face="Verdana, Geneva, sans-serif">
+                    <address style="color:white;">
+                        <br> R V College of Engineering
+                        <br> R V Vidyanikethan Post
+                        <br> Mysuru Road Bengaluru - 560 059
+                        <br>
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <a href="mailto:codingclub@rvce.edu.in">:codingclub@rvce.edu.in</a>
+                    </address>
+                    </font>
+              </div>
+              </div>
+              <div class="col-md-1"></div>
+              
+              <div class="col-md-4">
+                <div class="mb-5">
+                    
+                  <h3>Social</h3>
+                  <font face="Verdana, Geneva, sans-serif">
+                  <ul class="list-unstyled footer-social" style="text-align:center;position:relative;right:18px;">
+                    <!-- <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li> -->
+                    <li><a href="https://www.facebook.com/codingclubrvce/" target="_blank"><span class="fa fa-facebook"></span> Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/coding-club-rvce/" target="_blank"><span class="fa fa-linkedin-square"></span> LinkedIn </a></li>
+                  </ul>
+                  </font>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+    <!-- END footer -->
+
+<script type="text/javascript">
+  $(document).ready(function () {
+     $('#sidebarCollapse').on('click', function () {
+         $('#sidebar').toggleClass('active');
+     });
+ });
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
